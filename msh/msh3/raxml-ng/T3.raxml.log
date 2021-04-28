@@ -1,0 +1,845 @@
+
+RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz, 16 cores, 125 GB RAM
+
+RAxML-NG was called at 11-Apr-2021 18:28:47 as follows:
+
+raxml-ng --msa ../mafft/alignment_msh3.fa --model LG+G+I+F --prefix T3 --threads 2 --seed 2
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), PTHREADS (2 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: ../mafft/alignment_msh3.fa
+[00:00:00] Loaded alignment with 68 taxa and 2637 sites
+
+Alignment comprises 1 partitions and 2336 patterns
+
+Partition 0: noname
+Model: LG+FC+I+G4m
+Alignment sites / patterns: 2637 / 2336
+Gaps: 62.83 %
+Invariant sites: 23.36 %
+
+
+NOTE: Binary MSA file created: T3.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 2 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Generating 10 random starting tree(s) with 68 taxa
+[00:00:00] Generating 10 parsimony starting tree(s) with 68 taxa
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 1168 / 93440
+[00:00:00] Data distribution: max. searches per worker: 20
+
+Starting ML tree search with 20 distinct starting trees
+
+[00:00:00 -162526.693517] Initial branch length optimization
+[00:00:02 -139802.843057] Model parameter optimization (eps = 10.000000)
+[00:00:05 -139630.904497] AUTODETECT spr round 1 (radius: 5)
+[00:00:20 -121893.309135] AUTODETECT spr round 2 (radius: 10)
+[00:00:44 -119255.812828] AUTODETECT spr round 3 (radius: 15)
+[00:01:05 -119142.431627] AUTODETECT spr round 4 (radius: 20)
+[00:01:16 -119142.430709] SPR radius for FAST iterations: 15 (autodetect)
+[00:01:16 -119142.430709] Model parameter optimization (eps = 3.000000)
+[00:01:18 -119106.015709] FAST spr round 1 (radius: 15)
+[00:02:00 -117928.016854] FAST spr round 2 (radius: 15)
+[00:02:31 -117887.965934] FAST spr round 3 (radius: 15)
+[00:02:59 -117860.348567] FAST spr round 4 (radius: 15)
+[00:03:25 -117854.634327] FAST spr round 5 (radius: 15)
+[00:03:50 -117851.184078] FAST spr round 6 (radius: 15)
+[00:04:15 -117847.486828] FAST spr round 7 (radius: 15)
+[00:04:39 -117846.861267] FAST spr round 8 (radius: 15)
+[00:05:03 -117846.607420] FAST spr round 9 (radius: 15)
+[00:05:28 -117846.607327] Model parameter optimization (eps = 1.000000)
+[00:05:29 -117844.738113] SLOW spr round 1 (radius: 5)
+[00:06:39 -117842.386007] SLOW spr round 2 (radius: 5)
+[00:07:42 -117841.342865] SLOW spr round 3 (radius: 5)
+[00:08:45 -117840.786737] SLOW spr round 4 (radius: 5)
+[00:09:47 -117840.783941] SLOW spr round 5 (radius: 10)
+[00:10:44 -117840.783550] SLOW spr round 6 (radius: 15)
+[00:11:46 -117840.783495] SLOW spr round 7 (radius: 20)
+[00:12:22 -117840.783487] SLOW spr round 8 (radius: 25)
+[00:12:36 -117840.783486] Model parameter optimization (eps = 0.100000)
+
+[00:12:38] ML tree search #1, logLikelihood: -117840.665941
+
+[00:12:38 -161275.699353] Initial branch length optimization
+[00:12:40 -139104.983617] Model parameter optimization (eps = 10.000000)
+[00:12:43 -138940.341048] AUTODETECT spr round 1 (radius: 5)
+[00:12:57 -123210.951476] AUTODETECT spr round 2 (radius: 10)
+[00:13:20 -119127.598811] AUTODETECT spr round 3 (radius: 15)
+[00:13:39 -119127.576524] SPR radius for FAST iterations: 10 (autodetect)
+[00:13:39 -119127.576524] Model parameter optimization (eps = 3.000000)
+[00:13:42 -119082.764279] FAST spr round 1 (radius: 10)
+[00:14:21 -117926.672001] FAST spr round 2 (radius: 10)
+[00:14:48 -117885.304135] FAST spr round 3 (radius: 10)
+[00:15:14 -117874.846320] FAST spr round 4 (radius: 10)
+[00:15:40 -117861.976112] FAST spr round 5 (radius: 10)
+[00:16:03 -117858.755419] FAST spr round 6 (radius: 10)
+[00:16:28 -117854.592247] FAST spr round 7 (radius: 10)
+[00:16:53 -117850.654168] FAST spr round 8 (radius: 10)
+[00:17:16 -117846.964506] FAST spr round 9 (radius: 10)
+[00:17:40 -117844.776615] FAST spr round 10 (radius: 10)
+[00:18:03 -117843.374708] FAST spr round 11 (radius: 10)
+[00:18:27 -117843.374589] Model parameter optimization (eps = 1.000000)
+[00:18:29 -117842.288958] SLOW spr round 1 (radius: 5)
+[00:19:38 -117838.670111] SLOW spr round 2 (radius: 5)
+[00:20:41 -117838.668841] SLOW spr round 3 (radius: 10)
+[00:21:38 -117838.668676] SLOW spr round 4 (radius: 15)
+[00:22:39 -117838.668655] SLOW spr round 5 (radius: 20)
+[00:23:14 -117838.668652] SLOW spr round 6 (radius: 25)
+[00:23:28 -117838.668651] Model parameter optimization (eps = 0.100000)
+
+[00:23:29] ML tree search #2, logLikelihood: -117838.664003
+
+[00:23:29 -160285.276153] Initial branch length optimization
+[00:23:31 -138739.500158] Model parameter optimization (eps = 10.000000)
+[00:23:34 -138565.367146] AUTODETECT spr round 1 (radius: 5)
+[00:23:47 -124036.597183] AUTODETECT spr round 2 (radius: 10)
+[00:24:12 -119377.167603] AUTODETECT spr round 3 (radius: 15)
+[00:24:31 -119339.409990] AUTODETECT spr round 4 (radius: 20)
+[00:24:39 -119339.398215] SPR radius for FAST iterations: 15 (autodetect)
+[00:24:39 -119339.398215] Model parameter optimization (eps = 3.000000)
+[00:24:43 -119295.977922] FAST spr round 1 (radius: 15)
+[00:25:23 -117955.134534] FAST spr round 2 (radius: 15)
+
+RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz, 16 cores, 125 GB RAM
+
+RAxML-NG was called at 11-Apr-2021 18:54:37 as follows:
+
+raxml-ng --msa ../mafft/alignment_msh3.fa --model LG+G+I+F --prefix T3 --threads 16 --seed 2
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), PTHREADS (16 threads), thread pinning: OFF
+
+WARNING: The model you specified on the command line (LG+G+I+F) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: T3.raxml.rba
+[00:00:00] Alignment comprises 68 taxa, 1 partitions and 2336 patterns
+
+Partition 0: noname
+Model: LG+FC+I+G4m
+Alignment sites / patterns: 2637 / 2336
+Gaps: 62.83 %
+Invariant sites: 23.36 %
+
+
+Parallelization scheme autoconfig: 2 worker(s) x 8 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] NOTE: Resuming execution from checkpoint (logLH: -117955.13, ML trees: 2, bootstraps: 0)
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 292 / 23360
+[00:00:00] Data distribution: max. searches per worker: 10
+
+Starting ML tree search with 20 distinct starting trees
+
+[00:00:00 -117955.134534] SPR radius for FAST iterations: 15 (autodetect)
+[00:00:00 -117955.134534] FAST spr round 2 (radius: 15)
+[00:00:11 -117889.542423] FAST spr round 3 (radius: 15)
+[00:00:21 -117882.360575] FAST spr round 4 (radius: 15)
+[00:00:30 -117874.106862] FAST spr round 5 (radius: 15)
+
+RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz, 16 cores, 125 GB RAM
+
+RAxML-NG was called at 11-Apr-2021 18:56:15 as follows:
+
+raxml-ng --msa ../mafft/alignment_msh3.fa --model LG+G+I+F --prefix T3 --threads 16 --seed 2
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), PTHREADS (16 threads), thread pinning: OFF
+
+WARNING: The model you specified on the command line (LG+G+I+F) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: T3.raxml.rba
+[00:00:00] Alignment comprises 68 taxa, 1 partitions and 2336 patterns
+
+Partition 0: noname
+Model: LG+FC+I+G4m
+Alignment sites / patterns: 2637 / 2336
+Gaps: 62.83 %
+Invariant sites: 23.36 %
+
+
+Parallelization scheme autoconfig: 2 worker(s) x 8 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] NOTE: Resuming execution from checkpoint (logLH: -117874.11, ML trees: 2, bootstraps: 0)
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 292 / 23360
+[00:00:00] Data distribution: max. searches per worker: 9
+
+ERROR: CPU core oversubscription detected! RAxML-NG will terminate now to avoid wasting resources.
+NOTE:  Details: https://github.com/amkozlov/raxml-ng/wiki/Parallelization#core-oversubscription
+NOTE:  You can use '--force perf_threads' to disable this check, but ONLY if you are 200% sure this is a false alarm!
+
+
+RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz, 16 cores, 125 GB RAM
+
+RAxML-NG was called at 11-Apr-2021 18:56:24 as follows:
+
+raxml-ng --msa ../mafft/alignment_msh3.fa --model LG+G+I+F --prefix T3 --threads 16 --seed 2
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), PTHREADS (16 threads), thread pinning: OFF
+
+WARNING: The model you specified on the command line (LG+G+I+F) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: T3.raxml.rba
+[00:00:00] Alignment comprises 68 taxa, 1 partitions and 2336 patterns
+
+Partition 0: noname
+Model: LG+FC+I+G4m
+Alignment sites / patterns: 2637 / 2336
+Gaps: 62.83 %
+Invariant sites: 23.36 %
+
+
+Parallelization scheme autoconfig: 2 worker(s) x 8 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] NOTE: Resuming execution from checkpoint (logLH: -117874.11, ML trees: 2, bootstraps: 0)
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 292 / 23360
+[00:00:00] Data distribution: max. searches per worker: 9
+
+ERROR: CPU core oversubscription detected! RAxML-NG will terminate now to avoid wasting resources.
+NOTE:  Details: https://github.com/amkozlov/raxml-ng/wiki/Parallelization#core-oversubscription
+NOTE:  You can use '--force perf_threads' to disable this check, but ONLY if you are 200% sure this is a false alarm!
+
+
+RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz, 16 cores, 125 GB RAM
+
+RAxML-NG was called at 11-Apr-2021 18:58:06 as follows:
+
+raxml-ng --msa ../mafft/alignment_msh3.fa --model LG+G+I+F --prefix T3 --threads 48 --seed 2
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), PTHREADS (48 threads), thread pinning: OFF
+
+WARNING: The model you specified on the command line (LG+G+I+F) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: T3.raxml.rba
+[00:00:00] Alignment comprises 68 taxa, 1 partitions and 2336 patterns
+
+Partition 0: noname
+Model: LG+FC+I+G4m
+Alignment sites / patterns: 2637 / 2336
+Gaps: 62.83 %
+Invariant sites: 23.36 %
+
+
+Parallelization scheme autoconfig: 6 worker(s) x 8 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] NOTE: Resuming execution from checkpoint (logLH: -117874.11, ML trees: 2, bootstraps: 0)
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 292 / 23360
+[00:00:00] Data distribution: max. searches per worker: 4
+
+ERROR: CPU core oversubscription detected! RAxML-NG will terminate now to avoid wasting resources.
+NOTE:  Details: https://github.com/amkozlov/raxml-ng/wiki/Parallelization#core-oversubscription
+NOTE:  You can use '--force perf_threads' to disable this check, but ONLY if you are 200% sure this is a false alarm!
+
+
+RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz, 16 cores, 125 GB RAM
+
+RAxML-NG was called at 11-Apr-2021 18:59:20 as follows:
+
+raxml-ng --msa ../mafft/alignment_msh3.fa --model LG+G+I+F --prefix T3 --threads 24 --seed 2
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), PTHREADS (24 threads), thread pinning: OFF
+
+WARNING: The model you specified on the command line (LG+G+I+F) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: T3.raxml.rba
+[00:00:00] Alignment comprises 68 taxa, 1 partitions and 2336 patterns
+
+Partition 0: noname
+Model: LG+FC+I+G4m
+Alignment sites / patterns: 2637 / 2336
+Gaps: 62.83 %
+Invariant sites: 23.36 %
+
+
+Parallelization scheme autoconfig: 3 worker(s) x 8 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] NOTE: Resuming execution from checkpoint (logLH: -117874.11, ML trees: 2, bootstraps: 0)
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 292 / 23360
+[00:00:00] Data distribution: max. searches per worker: 7
+
+ERROR: CPU core oversubscription detected! RAxML-NG will terminate now to avoid wasting resources.
+NOTE:  Details: https://github.com/amkozlov/raxml-ng/wiki/Parallelization#core-oversubscription
+NOTE:  You can use '--force perf_threads' to disable this check, but ONLY if you are 200% sure this is a false alarm!
+
+
+RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz, 16 cores, 125 GB RAM
+
+RAxML-NG was called at 11-Apr-2021 18:59:30 as follows:
+
+raxml-ng --msa ../mafft/alignment_msh3.fa --model LG+G+I+F --prefix T3 --threads 24 --seed 2
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), PTHREADS (24 threads), thread pinning: OFF
+
+WARNING: The model you specified on the command line (LG+G+I+F) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: T3.raxml.rba
+[00:00:00] Alignment comprises 68 taxa, 1 partitions and 2336 patterns
+
+Partition 0: noname
+Model: LG+FC+I+G4m
+Alignment sites / patterns: 2637 / 2336
+Gaps: 62.83 %
+Invariant sites: 23.36 %
+
+
+Parallelization scheme autoconfig: 3 worker(s) x 8 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] NOTE: Resuming execution from checkpoint (logLH: -117874.11, ML trees: 2, bootstraps: 0)
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 292 / 23360
+[00:00:00] Data distribution: max. searches per worker: 7
+
+ERROR: CPU core oversubscription detected! RAxML-NG will terminate now to avoid wasting resources.
+NOTE:  Details: https://github.com/amkozlov/raxml-ng/wiki/Parallelization#core-oversubscription
+NOTE:  You can use '--force perf_threads' to disable this check, but ONLY if you are 200% sure this is a false alarm!
+
+
+RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz, 16 cores, 125 GB RAM
+
+RAxML-NG was called at 11-Apr-2021 18:59:44 as follows:
+
+raxml-ng --msa ../mafft/alignment_msh3.fa --model LG+G+I+F --prefix T3 --threads 2 --seed 2
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), PTHREADS (2 threads), thread pinning: OFF
+
+WARNING: The model you specified on the command line (LG+G+I+F) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: T3.raxml.rba
+[00:00:00] Alignment comprises 68 taxa, 1 partitions and 2336 patterns
+
+Partition 0: noname
+Model: LG+FC+I+G4m
+Alignment sites / patterns: 2637 / 2336
+Gaps: 62.83 %
+Invariant sites: 23.36 %
+
+
+Parallelization scheme autoconfig: 1 worker(s) x 2 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] NOTE: Resuming execution from checkpoint (logLH: -117874.11, ML trees: 2, bootstraps: 0)
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 1168 / 93440
+[00:00:00] Data distribution: max. searches per worker: 18
+
+Starting ML tree search with 20 distinct starting trees
+
+[00:00:00 -117874.106862] SPR radius for FAST iterations: 15 (autodetect)
+[00:00:00 -117874.106862] FAST spr round 5 (radius: 15)
+
+RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz, 16 cores, 125 GB RAM
+
+RAxML-NG was called at 11-Apr-2021 19:00:01 as follows:
+
+raxml-ng --msa ../mafft/alignment_msh3.fa --model LG+G+I+F --prefix T3 --threads 16 --seed 2
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), PTHREADS (16 threads), thread pinning: OFF
+
+WARNING: The model you specified on the command line (LG+G+I+F) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: T3.raxml.rba
+[00:00:00] Alignment comprises 68 taxa, 1 partitions and 2336 patterns
+
+Partition 0: noname
+Model: LG+FC+I+G4m
+Alignment sites / patterns: 2637 / 2336
+Gaps: 62.83 %
+Invariant sites: 23.36 %
+
+
+Parallelization scheme autoconfig: 2 worker(s) x 8 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] NOTE: Resuming execution from checkpoint (logLH: -117874.11, ML trees: 2, bootstraps: 0)
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 292 / 23360
+[00:00:00] Data distribution: max. searches per worker: 10
+
+ERROR: CPU core oversubscription detected! RAxML-NG will terminate now to avoid wasting resources.
+NOTE:  Details: https://github.com/amkozlov/raxml-ng/wiki/Parallelization#core-oversubscription
+NOTE:  You can use '--force perf_threads' to disable this check, but ONLY if you are 200% sure this is a false alarm!
+
+
+RAxML-NG v. 1.0.2 released on 22.02.2021 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz, 16 cores, 125 GB RAM
+
+RAxML-NG was called at 11-Apr-2021 19:00:16 as follows:
+
+raxml-ng --msa ../mafft/alignment_msh3.fa --model LG+G+I+F --prefix T3 --threads 2 --seed 2
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): random (10) + parsimony (10)
+  random seed: 2
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX
+  parallelization: coarse-grained (auto), PTHREADS (2 threads), thread pinning: OFF
+
+WARNING: The model you specified on the command line (LG+G+I+F) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: T3.raxml.rba
+[00:00:00] Alignment comprises 68 taxa, 1 partitions and 2336 patterns
+
+Partition 0: noname
+Model: LG+FC+I+G4m
+Alignment sites / patterns: 2637 / 2336
+Gaps: 62.83 %
+Invariant sites: 23.36 %
+
+
+Parallelization scheme autoconfig: 1 worker(s) x 2 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] NOTE: Resuming execution from checkpoint (logLH: -117874.11, ML trees: 2, bootstraps: 0)
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 1168 / 93440
+[00:00:00] Data distribution: max. searches per worker: 18
+
+Starting ML tree search with 20 distinct starting trees
+
+[00:00:00 -117874.106862] SPR radius for FAST iterations: 15 (autodetect)
+[00:00:00 -117874.106862] FAST spr round 5 (radius: 15)
+[00:00:28 -117863.167598] FAST spr round 6 (radius: 15)
+[00:00:53 -117860.523221] FAST spr round 7 (radius: 15)
+[00:01:17 -117853.469364] FAST spr round 8 (radius: 15)
+[00:01:41 -117850.683343] FAST spr round 9 (radius: 15)
+[00:02:05 -117849.294410] FAST spr round 10 (radius: 15)
+[00:02:30 -117847.980265] FAST spr round 11 (radius: 15)
+[00:02:55 -117847.979390] Model parameter optimization (eps = 1.000000)
+[00:02:56 -117843.936128] SLOW spr round 1 (radius: 5)
+[00:04:06 -117842.811541] SLOW spr round 2 (radius: 5)
+[00:05:10 -117842.404948] SLOW spr round 3 (radius: 5)
+[00:06:13 -117842.337695] SLOW spr round 4 (radius: 10)
+[00:07:11 -117842.337394] SLOW spr round 5 (radius: 15)
+[00:08:14 -117842.337366] SLOW spr round 6 (radius: 20)
+[00:08:51 -117842.337363] SLOW spr round 7 (radius: 25)
+[00:09:05 -117842.337362] Model parameter optimization (eps = 0.100000)
+
+[00:09:06] ML tree search #3, logLikelihood: -117842.335548
+
+[00:09:06 -161078.720457] Initial branch length optimization
+[00:09:08 -139647.963853] Model parameter optimization (eps = 10.000000)
+[00:09:11 -139484.005142] AUTODETECT spr round 1 (radius: 5)
+[00:09:25 -123598.506015] AUTODETECT spr round 2 (radius: 10)
+[00:09:47 -119119.231803] AUTODETECT spr round 3 (radius: 15)
+[00:10:04 -119061.125409] AUTODETECT spr round 4 (radius: 20)
+[00:10:13 -119061.124032] SPR radius for FAST iterations: 15 (autodetect)
+[00:10:13 -119061.124032] Model parameter optimization (eps = 3.000000)
+[00:10:15 -119034.682123] FAST spr round 1 (radius: 15)
+[00:10:56 -117888.026672] FAST spr round 2 (radius: 15)
+[00:11:22 -117857.855543] FAST spr round 3 (radius: 15)
+[00:11:46 -117853.090950] FAST spr round 4 (radius: 15)
+[00:12:10 -117849.595444] FAST spr round 5 (radius: 15)
+[00:12:33 -117843.640722] FAST spr round 6 (radius: 15)
+[00:12:56 -117842.567481] FAST spr round 7 (radius: 15)
+[00:13:19 -117842.566701] Model parameter optimization (eps = 1.000000)
+[00:13:21 -117838.770285] SLOW spr round 1 (radius: 5)
+[00:14:30 -117838.702985] SLOW spr round 2 (radius: 10)
+[00:15:28 -117838.692843] SLOW spr round 3 (radius: 15)
+[00:16:28 -117838.691374] SLOW spr round 4 (radius: 20)
+[00:17:04 -117838.691172] SLOW spr round 5 (radius: 25)
+[00:17:18 -117838.691144] Model parameter optimization (eps = 0.100000)
+
+[00:17:19] ML tree search #4, logLikelihood: -117838.666043
+
+[00:17:19 -163171.709337] Initial branch length optimization
+[00:17:20 -139950.247787] Model parameter optimization (eps = 10.000000)
+[00:17:23 -139777.587428] AUTODETECT spr round 1 (radius: 5)
+[00:17:37 -123489.448634] AUTODETECT spr round 2 (radius: 10)
+[00:17:59 -119536.450886] AUTODETECT spr round 3 (radius: 15)
+[00:18:19 -119267.175342] AUTODETECT spr round 4 (radius: 20)
+[00:18:28 -119267.168662] SPR radius for FAST iterations: 15 (autodetect)
+[00:18:28 -119267.168662] Model parameter optimization (eps = 3.000000)
+[00:18:29 -119233.135573] FAST spr round 1 (radius: 15)
+[00:19:09 -117938.817626] FAST spr round 2 (radius: 15)
+[00:19:37 -117874.435878] FAST spr round 3 (radius: 15)
+[00:20:02 -117859.320996] FAST spr round 4 (radius: 15)
+[00:20:26 -117855.648088] FAST spr round 5 (radius: 15)
+[00:20:50 -117853.581059] FAST spr round 6 (radius: 15)
+[00:21:14 -117851.643388] FAST spr round 7 (radius: 15)
+[00:21:38 -117849.658526] FAST spr round 8 (radius: 15)
+[00:22:02 -117848.329815] FAST spr round 9 (radius: 15)
+[00:22:25 -117847.974945] FAST spr round 10 (radius: 15)
+[00:22:49 -117847.974557] Model parameter optimization (eps = 1.000000)
+[00:22:51 -117845.224803] SLOW spr round 1 (radius: 5)
+[00:24:00 -117840.709684] SLOW spr round 2 (radius: 5)
+[00:25:03 -117840.709151] SLOW spr round 3 (radius: 10)
+[00:25:59 -117840.709082] SLOW spr round 4 (radius: 15)
+[00:27:00 -117840.709072] SLOW spr round 5 (radius: 20)
+[00:27:35 -117840.709070] SLOW spr round 6 (radius: 25)
+[00:27:49 -117840.709070] Model parameter optimization (eps = 0.100000)
+
+[00:27:49] ML tree search #5, logLikelihood: -117840.665874
+
+[00:27:49 -162311.323307] Initial branch length optimization
+[00:27:51 -139417.926988] Model parameter optimization (eps = 10.000000)
+[00:27:54 -139247.755388] AUTODETECT spr round 1 (radius: 5)
+[00:28:07 -124196.296270] AUTODETECT spr round 2 (radius: 10)
+[00:28:32 -119407.040864] AUTODETECT spr round 3 (radius: 15)
+[00:28:52 -119406.836750] AUTODETECT spr round 4 (radius: 20)
+[00:29:02 -119406.809653] SPR radius for FAST iterations: 15 (autodetect)
+[00:29:02 -119406.809653] Model parameter optimization (eps = 3.000000)
+[00:29:04 -119369.469372] FAST spr round 1 (radius: 15)
+[00:29:44 -117870.719108] FAST spr round 2 (radius: 15)
+[00:30:10 -117857.712189] FAST spr round 3 (radius: 15)
+[00:30:34 -117854.246082] FAST spr round 4 (radius: 15)
+[00:30:57 -117852.517525] FAST spr round 5 (radius: 15)
+[00:31:21 -117850.795073] FAST spr round 6 (radius: 15)
+[00:31:45 -117846.292638] FAST spr round 7 (radius: 15)
+[00:32:09 -117845.739604] FAST spr round 8 (radius: 15)
+[00:32:33 -117845.739268] Model parameter optimization (eps = 1.000000)
+[00:32:34 -117845.184070] SLOW spr round 1 (radius: 5)
+[00:33:44 -117840.698033] SLOW spr round 2 (radius: 5)
+[00:34:47 -117840.697869] SLOW spr round 3 (radius: 10)
+[00:35:43 -117840.697852] SLOW spr round 4 (radius: 15)
+[00:36:44 -117840.697850] SLOW spr round 5 (radius: 20)
+[00:37:19 -117840.697850] SLOW spr round 6 (radius: 25)
+[00:37:33 -117840.697850] Model parameter optimization (eps = 0.100000)
+
+[00:37:34] ML tree search #6, logLikelihood: -117840.665147
+
+[00:37:34 -161594.036123] Initial branch length optimization
+[00:37:35 -139927.958414] Model parameter optimization (eps = 10.000000)
+[00:37:38 -139762.135038] AUTODETECT spr round 1 (radius: 5)
+[00:37:52 -123053.635834] AUTODETECT spr round 2 (radius: 10)
+[00:38:13 -118647.141190] AUTODETECT spr round 3 (radius: 15)
+[00:38:32 -118647.118885] SPR radius for FAST iterations: 10 (autodetect)
+[00:38:32 -118647.118885] Model parameter optimization (eps = 3.000000)
+[00:38:34 -118608.169480] FAST spr round 1 (radius: 10)
+[00:39:13 -117925.304603] FAST spr round 2 (radius: 10)
+[00:39:41 -117867.990598] FAST spr round 3 (radius: 10)
+[00:40:06 -117857.588812] FAST spr round 4 (radius: 10)
+[00:40:30 -117853.459972] FAST spr round 5 (radius: 10)
+[00:40:54 -117849.787220] FAST spr round 6 (radius: 10)
+[00:41:17 -117847.228068] FAST spr round 7 (radius: 10)
+[00:41:41 -117845.642966] FAST spr round 8 (radius: 10)
+[00:42:05 -117844.361748] FAST spr round 9 (radius: 10)
+[00:42:28 -117843.390422] FAST spr round 10 (radius: 10)
+[00:42:52 -117843.390048] Model parameter optimization (eps = 1.000000)
+[00:42:53 -117842.933332] SLOW spr round 1 (radius: 5)
+[00:44:02 -117840.680246] SLOW spr round 2 (radius: 5)
+[00:45:05 -117840.679427] SLOW spr round 3 (radius: 10)
+[00:46:01 -117840.679339] SLOW spr round 4 (radius: 15)
+[00:47:02 -117840.679326] SLOW spr round 5 (radius: 20)
+[00:47:36 -117840.679325] SLOW spr round 6 (radius: 25)
+[00:47:50 -117840.679325] Model parameter optimization (eps = 0.100000)
+
+[00:47:50] ML tree search #7, logLikelihood: -117840.663901
+
+[00:47:50 -161213.691723] Initial branch length optimization
+[00:47:52 -139626.476145] Model parameter optimization (eps = 10.000000)
+[00:47:55 -139463.810509] AUTODETECT spr round 1 (radius: 5)
+[00:48:09 -124968.440945] AUTODETECT spr round 2 (radius: 10)
+[00:48:33 -119475.485229] AUTODETECT spr round 3 (radius: 15)
+[00:48:51 -118646.180104] AUTODETECT spr round 4 (radius: 20)
+[00:48:58 -118646.162349] SPR radius for FAST iterations: 15 (autodetect)
+[00:48:58 -118646.162349] Model parameter optimization (eps = 3.000000)
+[00:49:00 -118616.772877] FAST spr round 1 (radius: 15)
+[00:49:38 -117875.887656] FAST spr round 2 (radius: 15)
+[00:50:02 -117870.096793] FAST spr round 3 (radius: 15)
+[00:50:26 -117864.517091] FAST spr round 4 (radius: 15)
+[00:50:50 -117862.888872] FAST spr round 5 (radius: 15)
+[00:51:14 -117861.434889] FAST spr round 6 (radius: 15)
+[00:51:37 -117852.078093] FAST spr round 7 (radius: 15)
+[00:52:01 -117849.605732] FAST spr round 8 (radius: 15)
+[00:52:25 -117848.421873] FAST spr round 9 (radius: 15)
+[00:52:49 -117847.774927] FAST spr round 10 (radius: 15)
+[00:53:13 -117847.774204] Model parameter optimization (eps = 1.000000)
+[00:53:15 -117845.971853] SLOW spr round 1 (radius: 5)
+[00:54:24 -117842.810919] SLOW spr round 2 (radius: 5)
+[00:55:26 -117842.404958] SLOW spr round 3 (radius: 5)
+[00:56:27 -117842.336975] SLOW spr round 4 (radius: 10)
+[00:57:23 -117842.336894] SLOW spr round 5 (radius: 15)
+[00:58:25 -117842.336892] SLOW spr round 6 (radius: 20)
+[00:59:01 -117842.336891] SLOW spr round 7 (radius: 25)
+[00:59:14 -117842.336891] Model parameter optimization (eps = 0.100000)
+
+[00:59:15] ML tree search #8, logLikelihood: -117842.335564
+
+[00:59:15 -160096.620368] Initial branch length optimization
+[00:59:17 -138476.199430] Model parameter optimization (eps = 10.000000)
+[00:59:20 -138310.560876] AUTODETECT spr round 1 (radius: 5)
+[00:59:33 -124462.440195] AUTODETECT spr round 2 (radius: 10)
+[00:59:53 -119507.095484] AUTODETECT spr round 3 (radius: 15)
+[01:00:08 -119320.254591] AUTODETECT spr round 4 (radius: 20)
+[01:00:19 -119320.239284] SPR radius for FAST iterations: 15 (autodetect)
+[01:00:19 -119320.239284] Model parameter optimization (eps = 3.000000)
+[01:00:21 -119293.764716] FAST spr round 1 (radius: 15)
+[01:01:01 -117892.342259] FAST spr round 2 (radius: 15)
+[01:01:27 -117873.541473] FAST spr round 3 (radius: 15)
+[01:01:52 -117865.951094] FAST spr round 4 (radius: 15)
+[01:02:16 -117861.257439] FAST spr round 5 (radius: 15)
+[01:02:40 -117857.536252] FAST spr round 6 (radius: 15)
+[01:03:05 -117852.755789] FAST spr round 7 (radius: 15)
+[01:03:28 -117850.854965] FAST spr round 8 (radius: 15)
+[01:03:52 -117849.360490] FAST spr round 9 (radius: 15)
+[01:04:16 -117848.258198] FAST spr round 10 (radius: 15)
+[01:04:40 -117848.258144] Model parameter optimization (eps = 1.000000)
+[01:04:42 -117845.833147] SLOW spr round 1 (radius: 5)
+[01:05:55 -117842.447347] SLOW spr round 2 (radius: 5)
+[01:06:59 -117840.664957] SLOW spr round 3 (radius: 5)
+[01:08:02 -117840.664933] SLOW spr round 4 (radius: 10)
+[01:08:58 -117840.664931] SLOW spr round 5 (radius: 15)
+[01:09:59 -117840.664931] SLOW spr round 6 (radius: 20)
+[01:10:34 -117840.664931] SLOW spr round 7 (radius: 25)
+[01:10:48 -117840.664931] Model parameter optimization (eps = 0.100000)
+
+[01:10:49] ML tree search #9, logLikelihood: -117840.662797
+
+[01:10:49 -159962.173512] Initial branch length optimization
+[01:10:50 -138916.334638] Model parameter optimization (eps = 10.000000)
+[01:10:53 -138750.858001] AUTODETECT spr round 1 (radius: 5)
+[01:11:06 -124834.099431] AUTODETECT spr round 2 (radius: 10)
+[01:11:28 -119665.557116] AUTODETECT spr round 3 (radius: 15)
+[01:11:46 -118974.999474] AUTODETECT spr round 4 (radius: 20)
+[01:11:54 -118974.975264] SPR radius for FAST iterations: 15 (autodetect)
+[01:11:54 -118974.975264] Model parameter optimization (eps = 3.000000)
+[01:11:56 -118948.867642] FAST spr round 1 (radius: 15)
+[01:12:34 -117860.605550] FAST spr round 2 (radius: 15)
+[01:12:58 -117857.079325] FAST spr round 3 (radius: 15)
+[01:13:21 -117854.845287] FAST spr round 4 (radius: 15)
+[01:13:44 -117853.246328] FAST spr round 5 (radius: 15)
+[01:14:08 -117852.003617] FAST spr round 6 (radius: 15)
+[01:14:31 -117850.852964] FAST spr round 7 (radius: 15)
+[01:14:55 -117847.544821] FAST spr round 8 (radius: 15)
+[01:15:18 -117846.529831] FAST spr round 9 (radius: 15)
+[01:15:42 -117846.529592] Model parameter optimization (eps = 1.000000)
+[01:15:44 -117844.675226] SLOW spr round 1 (radius: 5)
+[01:16:52 -117842.460147] SLOW spr round 2 (radius: 5)
+[01:17:56 -117840.670224] SLOW spr round 3 (radius: 5)
+[01:18:58 -117840.670020] SLOW spr round 4 (radius: 10)
+[01:19:53 -117840.669991] SLOW spr round 5 (radius: 15)
+[01:20:55 -117840.669987] SLOW spr round 6 (radius: 20)
+[01:21:30 -117840.669987] SLOW spr round 7 (radius: 25)
+[01:21:43 -117840.669987] Model parameter optimization (eps = 0.100000)
+
+[01:21:44] ML tree search #10, logLikelihood: -117840.663173
+
+[01:21:44 -127863.987759] Initial branch length optimization
+[01:21:46 -118393.775539] Model parameter optimization (eps = 10.000000)
+[01:21:48 -118177.205079] AUTODETECT spr round 1 (radius: 5)
+[01:22:01 -117873.985936] AUTODETECT spr round 2 (radius: 10)
+[01:22:21 -117873.970498] SPR radius for FAST iterations: 5 (autodetect)
+[01:22:21 -117873.970498] Model parameter optimization (eps = 3.000000)
+[01:22:22 -117873.759796] FAST spr round 1 (radius: 5)
+[01:22:45 -117857.683537] FAST spr round 2 (radius: 5)
+[01:23:06 -117854.714067] FAST spr round 3 (radius: 5)
+[01:23:27 -117852.376756] FAST spr round 4 (radius: 5)
+[01:23:48 -117850.845215] FAST spr round 5 (radius: 5)
+[01:24:09 -117850.211199] FAST spr round 6 (radius: 5)
+[01:24:31 -117844.501117] FAST spr round 7 (radius: 5)
+[01:24:52 -117844.067301] FAST spr round 8 (radius: 5)
+[01:25:13 -117842.912681] FAST spr round 9 (radius: 5)
+[01:25:35 -117842.523662] FAST spr round 10 (radius: 5)
+[01:25:56 -117842.468660] Model parameter optimization (eps = 1.000000)
+[01:25:56 -117842.425618] SLOW spr round 1 (radius: 5)
+[01:27:05 -117840.668996] SLOW spr round 2 (radius: 5)
